@@ -18,7 +18,15 @@ public class JIRATest extends BaseTest {
         loginPage.navigate();
         loginPage.Login("webinar5", "webinar5");
         Assert.assertEquals(WebDriverFactory.getDriver().getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
-        Assert.assertEquals(1,2);
+       //  Assert.assertEquals(1,2);
+    }
+    @Feature("Incorrect Data Entry")
+    @Test(groups = {"Regression", "SKIP"})
+    public void testLoginWrongLassword() {
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.navigate();
+        loginPage.Login("webinar5", "web5");
+        Assert.assertEquals(loginPage.errorMassage(), "Sorry, your username and password are incorrect - please try again.");
     }
 
     @Feature("Issue")
@@ -39,7 +47,6 @@ public class JIRATest extends BaseTest {
 
         Assert.assertTrue(createIssuePage.issueCreatedPopupPresent());
     }
-
     @Feature("Issue")
     @Test(groups = {"Regression", "SKIP"})
     public void testToBeSkipped() throws InterruptedException {

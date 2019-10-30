@@ -16,15 +16,12 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class TestListener implements ITestListener {
-
     @Override
     public void onTestStart(ITestResult iTestResult) {
     }
-
     @Override
     public void onTestSuccess(ITestResult iTestResult) {
     }
-
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         File screenshot = captureScreenshot();
@@ -35,14 +32,10 @@ public class TestListener implements ITestListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
     @Override
     public void onTestSkipped(ITestResult iTestResult) {
-
     }
-
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
 
