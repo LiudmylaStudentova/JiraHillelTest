@@ -18,7 +18,7 @@ public class JIRATest extends BaseTest {
         loginPage.navigate();
         loginPage.Login("webinar5", "webinar5");
         Assert.assertEquals(WebDriverFactory.getDriver().getCurrentUrl(), "https://jira.hillel.it/secure/Dashboard.jspa");
-       // Assert.assertEquals(1,2);
+        //Assert.assertEquals(1,2);
     }
     @Feature("Incorrect Data Entry")
     @Test(groups = {"Regression", "SKIP"})
