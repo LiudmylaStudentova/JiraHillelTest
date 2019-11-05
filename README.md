@@ -1,5 +1,5 @@
 TestJira
-Установка Maven проекта и запуск Hillel Jira Test:
+Установка Maven проекта и запуск теста:
 
 1.Cкачиваем среду разработки Intellij Idea
 
