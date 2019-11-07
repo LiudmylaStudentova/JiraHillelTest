@@ -1,4 +1,4 @@
-Test HillelJira
+Test HillelJira!
 Установка Maven проекта и запуск теста:
 
 1.Cкачиваем среду разработки Intellij Idea
