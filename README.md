@@ -1,7 +1,8 @@
-TestJira
+Test HillelJira!!!
+
 Установка Maven проекта и запуск теста:
 
-1.Cкачиваем срелу разработки Intellij Idea
+1.Cкачиваем среду разработки Intellij Idea
 
 2.Скачиваем и устанавливаем java -jdk(Java SE Development)
 
